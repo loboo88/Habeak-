@@ -1,33 +1,45 @@
-# Gradle files
-.gradle/
-build/
+import React from "react";
 
-# Local configuration file (sdk path, etc)
-local.properties
+export default function Home() { return ( <main className="min-h-screen bg-black text-white font-sans"> <header className="bg-red-600 p-6 shadow-md"> <div className="container mx-auto flex justify-between items-center"> <h1 className="text-3xl font-bold">LJ Digital</h1> <nav> <button className="bg-white text-red-600 px-4 py-2 rounded-xl font-semibold">Entrar / Cadastrar</button> </nav> </div> </header>
 
-# Log/OS Files
-*.log
+<section className="bg-[url('https://images.unsplash.com/photo-1618071245112-5f3e505c2050?fit=crop&w=1470&q=80')] bg-cover bg-center text-center py-24 px-4">
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">Aposte com os melhores!</h2>
+    <p className="text-lg mb-8 max-w-xl mx-auto">LJ Digital — Sua casa de apostas online com segurança, velocidade e os melhores jogos.</p>
+    <button className="bg-red-600 hover:bg-red-700 transition px-6 py-3 text-white text-lg rounded-full">Comece agora</button>
+  </section>
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+  <section className="py-16 px-6 bg-gray-900">
+    <div className="container mx-auto text-center">
+      <h3 className="text-3xl font-bold mb-10">Jogos Populares</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2">Futebol</h4>
+          <p>Campeonatos ao vivo e apostas rápidas.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2">Cassino Online</h4>
+          <p>Roleta, blackjack, slots e muito mais.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h4 className="text-xl font-semibold mb-2">Apostas ao Vivo</h4>
+          <p>Ganhe em tempo real com as melhores odds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+  <section className="py-16 px-6 bg-black">
+    <div className="container mx-auto text-center">
+      <h3 className="text-3xl font-bold mb-10">Produtos Digitais</h3>
+      <p className="max-w-2xl mx-auto mb-6">Além das apostas, oferecemos soluções em marketing digital, internet e crescimento online. Aumente sua presença no digital com a LJ Digital.</p>
+      <button className="mt-4 bg-white text-red-600 px-6 py-3 rounded-full font-semibold">Conheça nossos serviços</button>
+    </div>
+  </section>
 
-# Keystore files
-*.jks
-*.keystore
+  <footer className="bg-gray-800 p-6 text-center text-sm">
+    <p>© 2025 LJ Digital. Todos os direitos reservados.</p>
+  </footer>
+</main>
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+); }
 
-# Android Profiling
-*.hprof
